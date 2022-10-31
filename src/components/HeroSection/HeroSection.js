@@ -14,8 +14,8 @@ function HeroSection() {
                     <img src={dis} className="absolute inset-x-0 mx-auto top-20" />
                 </div>
             </div>
-            <hr className="w-40 rotate-90 mx-auto mt-20"></hr>
             <img src={shape} className="absolute inset-x-0 mx-aut" />
+            <hr className="w-40 rotate-90 mx-auto mt-20"></hr>
             <h1 className="text-center text-4xl mt-32">Who We Are</h1>
             <p className="text-center py-12 px-40">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo con</p>
         </div>

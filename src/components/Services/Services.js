@@ -5,31 +5,31 @@ import Frame2 from "./Frame-2.svg"
 import Frame3 from "./Frame-3.svg"
 import Frame4 from "./Frame-4.svg"
 import Frame5 from "./Frame-5.svg"
+import Frame6 from "./Frame-6.svg"
+
+
+import firstLine from "./firstLine.svg"
+import secLine from "./secLine.svg"
 
 
 function Services() {
 
-    const ser = {
-        ProjectStrategy : {
-            title: "Project strategy",
-            icon: Frame,
-            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-
-        }
-    }
+    const lorem = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
 
     return ( 
-        <div className="flex mx-24">
+        <div className="flex relative px-32">
             <div className="flex flex-col justify-center">
-                <Service icon={ser.ProjectStrategy.icon} title={ser.ProjectStrategy.title} description={ser.ProjectStrategy.description}/>
-                <Service icon={ser.ProjectStrategy.icon} title={ser.ProjectStrategy.title} description={ser.ProjectStrategy.description}/>
-                <Service icon={ser.ProjectStrategy.icon} title={ser.ProjectStrategy.title} description={ser.ProjectStrategy.description}/>
-                <Service icon={ser.ProjectStrategy.icon} title={ser.ProjectStrategy.title} description={ser.ProjectStrategy.description}/>
+                <img src={firstLine} className="absolute inset-x-0 top-20"/>
+                <img src={secLine} className="absolute inset-x-0 bottom-72"/>
+                <Service icon={Frame6} title="Project strategy" description={lorem}/>
+                <Service icon={Frame1} title="Backend and frontend programming" description={lorem}/>
+                <Service icon={Frame3} title="Visual branding" description={lorem}/>
+                <Service icon={Frame5} title="Digital marketing" description={lorem}/>
             </div>
             <div className="flex flex-col justify-center">
-                <Service icon={ser.ProjectStrategy.icon} title={ser.ProjectStrategy.title} description={ser.ProjectStrategy.description} isRight/>
-                <Service icon={ser.ProjectStrategy.icon} title={ser.ProjectStrategy.title} description={ser.ProjectStrategy.description} isRight/>
-                <Service icon={ser.ProjectStrategy.icon} title={ser.ProjectStrategy.title} description={ser.ProjectStrategy.description} isRight/>
+                <Service icon={Frame} title="User experience design" description={lorem} isRight/>
+                <Service icon={Frame2} title="Server management, setup and operation" description={lorem} isRight/>
+                <Service icon={Frame4} title="Illustration & Animation" description={lorem} isRight/>
             </div>
         </div>
      );
