@@ -14,7 +14,7 @@ module.exports = {
     supports: {},
     colors: ({ colors }) => ({
       back: '#202020',
-      shishei: 'rgba(255, 255, 255, 0.05)',
+      shishei: 'rgba(255, 255, 255, 0.08)',
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
