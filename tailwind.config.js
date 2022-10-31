@@ -13,6 +13,7 @@ module.exports = {
     },
     supports: {},
     colors: ({ colors }) => ({
+      back: '#202020',
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
@@ -361,6 +362,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      skia: ['skia'],
       sans: [
         'ui-sans-serif',
         'system-ui',
