@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
-    <div className="bg-back font-skia text-white">
+    <div className="font-skia text-white bg-back">
       <Nav />
       <HeroSection />
       <Services />
