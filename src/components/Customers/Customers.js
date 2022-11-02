@@ -1,3 +1,5 @@
+import Contact from './Contact';
+
 import left from './left.svg'
 import right from './right.svg'
 import avatar from './avatar.png'
@@ -16,6 +18,7 @@ function Customers() {
                 </div>
                 <img src={right} className="m-12"/>
             </div>
+            <Contact />
         </div>
      );
 }
