@@ -1,7 +1,7 @@
 function Left ({icon , title , description}) {
     return ( 
         <div className="flex flex-col justify-center items-center rounded-3xl rounded-br-none p-5 backdrop-blur-md bg-gradient-to-br from-shishei to-transparent shadow-xl m-12">
-            <img src={icon} className="p-4" />
+            <img src={icon} className="p-4" alt="project"/>
             <h1 className="text-lg font-semibold p-4">{title}</h1>
             <p className="text-center text-sm py-4 px-10">{description}</p>
         </div>
@@ -11,7 +11,7 @@ function Left ({icon , title , description}) {
 function Right ({icon , title , description}) {
     return ( 
         <div className="flex flex-col justify-center items-center rounded-3xl rounded-bl-none p-5 backdrop-blur-md bg-gradient-to-br from-shishei to-transparent shadow-xl m-12">
-            <img src={icon} className="p-4" />
+            <img src={icon} className="p-4" alt="project"/>
             <h1 className="text-lg font-semibold p-4">{title}</h1>
             <p className="text-center text-sm py-4 px-10">{description}</p>
         </div>

@@ -19,8 +19,8 @@ function Services() {
     return ( 
         <div className="flex relative px-32">
             <div className="flex flex-col justify-center">
-                <img src={firstLine} className="absolute inset-x-0 top-20"/>
-                <img src={secLine} className="absolute inset-x-0 bottom-72"/>
+                <img src={firstLine} className="absolute inset-x-0 top-20" alt="line"/>
+                <img src={secLine} className="absolute inset-x-0 bottom-72" alt="line"/>
                 <Service icon={Frame6} title="Project strategy" description={lorem}/>
                 <Service icon={Frame1} title="Backend and frontend programming" description={lorem}/>
                 <Service icon={Frame3} title="Visual branding" description={lorem}/>
