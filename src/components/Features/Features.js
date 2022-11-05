@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion'
+
+
 import c1 from './c1.svg'
 import c2 from './c2.svg'
 import c3 from './c3.svg'
@@ -8,8 +11,14 @@ function Card({img , title , des}) {
     return(
         <div className='flex flex-col justify-center items-center p-6'>
             <img src={img} className="p-3" />
-            <h1 className='text-center text-lg font-bold p-3 m-3'>{title}</h1>
-            <p className='text-center p-12'>{des}</p>
+            <motion.h1
+            initial={{ y: 100 }}
+            whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
+            className='text-center text-lg font-bold p-3 m-3'>{title}</motion.h1>
+            <motion.p 
+            initial={{ y: 100 }}
+            whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
+            className='text-center p-12'>{des}</motion.p>
         </div>
     )
 }
