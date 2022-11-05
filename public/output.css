@@ -725,6 +725,12 @@ video {
   display: flex;
 }
 
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -824,6 +830,10 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-hidden {
