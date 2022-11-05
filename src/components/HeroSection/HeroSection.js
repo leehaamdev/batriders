@@ -2,7 +2,7 @@ import bat from "./bat.svg"
 import title from "./title.svg"
 import dis from "./dis.svg"
 import shape from "./shape.svg"
-
+import {motion} from "framer-motion"
 
 function HeroSection() {
     return ( 
@@ -18,8 +18,14 @@ function HeroSection() {
                 <div className=" flex flex-col justify-center">
                     <img src={shape} className="absolute inset-x-0 top-20 z-0" />
                     <hr className="w-40 rotate-90 mx-auto mt-20 z-10"></hr>
-                    <h1 className="text-center text-4xl mt-32 z-10">Who We Are</h1>
-                    <p className="text-center py-12 px-40 z-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo con</p>
+                    <motion.h1 
+                    initial={{ y: 100 }}
+                    whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
+                    className="text-center text-4xl mt-32 z-10">Who We Are</motion.h1>
+                    <motion.p 
+                    initial={{ y: 100 }}
+                    whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
+                    className="text-center py-12 px-40 z-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo con</motion.p>
                 </div>
             </div>
         </div>
