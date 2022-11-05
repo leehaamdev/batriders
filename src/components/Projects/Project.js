@@ -3,9 +3,11 @@ import {motion} from "framer-motion"
 
 function RightProject({img , name , title , des}) {
     return(
-        <div className="flex items-center z-10">
-            <img src={img} />
-            <div className=" mx-auto p-40">
+        <div className="flex items-center justify-between z-10">
+            <div className="w-2/4 overflow-hidden">
+                <img src={img}  className="hover:scale-105 duration-700"/>
+            </div>
+            <div className="w-2/4 mx-auto p-40">
                 <motion.h1 
                 initial={{ y: 100 }}
                 whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
@@ -29,8 +31,8 @@ function RightProject({img , name , title , des}) {
 
 function LeftProject({img , name , title , des}) {
     return(
-        <div className="flex items-center z-10">
-            <div className=" mx-auto p-40">
+        <div className="flex items-center justify-between z-10">
+            <div className="w-2/4 mx-auto p-40">
                 <motion.h1 
                 initial={{ y: 100 }}
                 whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
@@ -48,7 +50,9 @@ function LeftProject({img , name , title , des}) {
                 whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
                 className="border rounded-2xl px-28 py-2  hover:bg-white hover:text-back transition-all ease-in-out duration-200">Click</motion.button>
             </div>
-            <img src={img} />
+            <div className="w-2/4 overflow-hidden flex justify-end">
+                <img src={img}  className="hover:scale-105 duration-700"/>
+            </div>
         </div>
     )
 }
