@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Project from "./Project";
 import l1 from './l1.svg'
 import l2 from './l2.svg'
@@ -19,7 +21,10 @@ function Projects() {
             <div className="pb-32 relative flex flex-col">
                 <img src={l1} className="absolute top-40" />
                 <img src={l2} className="absolute" />
-                <h1 className="text-center text-4xl mt-32 pb-12">OUR PROJECTS</h1>
+                <motion.h1 
+                initial={{ y: 100 }}
+                whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
+                className="text-center text-4xl mt-32 pb-12">OUR PROJECTS</motion.h1>
                 <hr className="w-40 rotate-90 mx-auto mt-20"></hr>
             </div>
             <div className="relative flex flex-col">
