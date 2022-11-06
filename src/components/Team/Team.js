@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import bat from "./batlogo.svg"
 import milad from './milad.png'
 
@@ -5,7 +7,10 @@ import milad from './milad.png'
 function Team() {
     return ( 
         <div className="flex flex-col items-center relative">
-            <h1 className="text-3xl pb-12 pt-24">OUR TEAM</h1>
+            <motion.h1
+            initial={{ y: 100 }}
+            whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
+            className="text-3xl pb-12 pt-24">OUR TEAM</motion.h1>
             <div className="flex justify-center absolute bottom-48">
             <div className="flex flex-col items-center -mx-32 z-10 scale-50">
                     <img src={milad} alt="milad"/>
