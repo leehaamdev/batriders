@@ -1,9 +1,9 @@
-import footerlogo from './footerlogo.svg'
-import call from './call.svg'
-import email from './email.svg'
-import instagram from './instagram.svg'
-import telegram from './telegram.svg'
-import whatsapp from './whatsapp.svg'
+import footerlogo from '../../assets/icons/footerlogo.svg'
+import call from '../../assets/icons/call.svg'
+import email from '../../assets/icons/email.svg'
+import instagram from '../../assets/icons/instagram.svg'
+import telegram from '../../assets/icons/telegram.svg'
+import whatsapp from '../../assets/icons/whatsapp.svg'
 
 function Footer() {
     return ( 

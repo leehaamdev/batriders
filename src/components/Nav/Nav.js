@@ -1,4 +1,4 @@
-import vector from "./Vector.svg"
+import vector from "../../assets/icons/batridersVector.svg"
 
 function Nav() {
     return ( 

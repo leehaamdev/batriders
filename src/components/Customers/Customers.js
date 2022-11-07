@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./style.css";
+import "../../assets/styles/style-customers.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
@@ -7,7 +7,7 @@ import { Navigation } from "swiper";
 
 
 import Contact from './Contact';
-import avatar from './avatar.png'
+import avatar from '../../assets/images/avatar.png'
 
 
 

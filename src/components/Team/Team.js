@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
-import bat from "./batlogo.svg"
-import milad from './milad.png'
+import bat from "../../assets/icons/batlogo.svg"
+import milad from '../../assets/images/milad.png'
 
 
 function Team() {

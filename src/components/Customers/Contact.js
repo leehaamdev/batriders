@@ -1,4 +1,4 @@
-import arrow from './arrow.svg'
+import arrow from '../../assets/icons/arrow-contact.svg'
 
 function Contact() {
     return ( 

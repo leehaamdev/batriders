@@ -1,16 +1,16 @@
 
 import Service from "./Service";
-import Frame from "./Frame.svg"
-import Frame1 from "./Frame-1.svg"
-import Frame2 from "./Frame-2.svg"
-import Frame3 from "./Frame-3.svg"
-import Frame4 from "./Frame-4.svg"
-import Frame5 from "./Frame-5.svg"
-import Frame6 from "./Frame-6.svg"
+import Frame from "../../assets/icons/Frame.svg"
+import Frame1 from "../../assets/icons/Frame-1.svg"
+import Frame2 from "../../assets/icons/Frame-2.svg"
+import Frame3 from "../../assets/icons/Frame-3.svg"
+import Frame4 from "../../assets/icons/Frame-4.svg"
+import Frame5 from "../../assets/icons/Frame-5.svg"
+import Frame6 from "../../assets/icons/Frame-6.svg"
 
 
-import firstLine from "./firstLine.svg"
-import secLine from "./secLine.svg"
+import firstLine from "../../assets/icons/firstLine.svg"
+import secLine from "../../assets/icons/secLine.svg"
 
 
 function Services() {

@@ -1,7 +1,7 @@
-import bat from "./bat.svg"
-import title from "./title.svg"
-import dis from "./dis.svg"
-import shape from "./shape.svg"
+import bat from "../../assets/icons/bat.svg"
+import title from "../../assets/icons/title.svg"
+import dis from "../../assets/icons/dis.svg"
+import shape from "../../assets/icons/shape.svg"
 import {motion} from "framer-motion"
 
 function HeroSection() {
