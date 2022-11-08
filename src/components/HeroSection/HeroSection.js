@@ -2,7 +2,6 @@ import Lottie from "lottie-react"
 import logoBatriders from "../../assets/lotties/logoBatriders.json"
 
 
-import bat from "../../assets/icons/bat.svg"
 import title from "../../assets/icons/title.svg"
 import dis from "../../assets/icons/dis.svg"
 import shape from "../../assets/icons/shape.svg"
@@ -12,14 +11,18 @@ function HeroSection() {
     return ( 
         <div>
             <div className="flex flex-col justify-center relative">
-                    <img src={bat} className="mx-auto" alt="bat" />
+                <Lottie animationData={logoBatriders} loop={false} style={{height : '700px'}}/>
                 <div>
-                    <img src={title} className="absolute inset-x-0 mx-auto bottom-1/2"  alt="title"/>
-                    <img src={dis} className="absolute inset-x-0 mx-auto bottom-1/3" alt="dis"/>
+                    <motion.img 
+                    initial={{ y: 100 }}
+                    whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}}  src={title} className="absolute inset-x-0 mx-auto bottom-1/2"  alt="title"/>
+                    <motion.img 
+                    initial={{ y: 100 }}
+                    whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut" , delay: 0.1,}}} 
+                    src={dis} className="absolute inset-x-0 mx-auto bottom-1/3" alt="dis"/>
                 </div>
             </div>
             <div>
-            <Lottie animationData={logoBatriders} />
             </div>
             <div className="relative flex">
                 <div className=" flex flex-col justify-center">
