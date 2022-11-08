@@ -5,7 +5,7 @@ function RightProject({img , name , title , des}) {
     return(
         <div className="flex items-center justify-between z-10">
             <div className="w-fit h-4/6 overflow-hidden">
-                <img src={img}  className="hover:scale-105 duration-700 object-cover"/>
+                <img src={img}  className="hover:scale-105 duration-700 object-cover"alt="img"/>
             </div>
             <div className="w-2/4 mx-auto p-40">
                 <motion.h1 
@@ -51,7 +51,7 @@ function LeftProject({img , name , title , des}) {
                 className="border rounded-2xl px-28 py-2  hover:bg-white hover:text-back transition-all ease-in-out duration-200">Click</motion.button>
             </div>
             <div className="w-fit h-4/6 overflow-hidden">
-                <img src={img}  className="hover:scale-105 duration-700 ml-auto object-cover"/>
+                <img src={img}  className="hover:scale-105 duration-700 ml-auto object-cover" alt="img"/>
             </div>
         </div>
     )

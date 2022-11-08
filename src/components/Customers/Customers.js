@@ -18,7 +18,7 @@ function Customers() {
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                     <SwiperSlide>
                         <div className='flex flex-col items-center text-center'>
-                            <img src={avatar}  className="m-12"/>
+                            <img src={avatar}  className="m-12" alt="avatar"/>
                             <p className='text-bold m-8 mx-24'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud </p>
                             <h1 className='text-bold text-2xl m-3'>Mohammad Asgari </h1>
                             <h2 className='mb-12'>Robat Air - CEO</h2>
@@ -26,7 +26,7 @@ function Customers() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='flex flex-col items-center text-center'>
-                            <img src={avatar}  className="m-12"/>
+                            <img src={avatar}  className="m-12" alt="avatar"/>
                             <p className='text-bold m-8 mx-24'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud </p>
                             <h1 className='text-bold text-2xl m-3'>Mohammad Asgari </h1>
                             <h2 className='mb-12'>Robat Air - CEO</h2>

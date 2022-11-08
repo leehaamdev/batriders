@@ -1,3 +1,7 @@
+import Lottie from "lottie-react"
+import logoBatriders from "../../assets/lotties/logoBatriders.json"
+
+
 import bat from "../../assets/icons/bat.svg"
 import title from "../../assets/icons/title.svg"
 import dis from "../../assets/icons/dis.svg"
@@ -8,15 +12,18 @@ function HeroSection() {
     return ( 
         <div>
             <div className="flex flex-col justify-center relative">
-                    <img src={bat} className="mx-auto" />
+                    <img src={bat} className="mx-auto" alt="bat" />
                 <div>
-                    <img src={title} className="absolute inset-x-0 mx-auto bottom-1/2" />
-                    <img src={dis} className="absolute inset-x-0 mx-auto bottom-1/3" />
+                    <img src={title} className="absolute inset-x-0 mx-auto bottom-1/2"  alt="title"/>
+                    <img src={dis} className="absolute inset-x-0 mx-auto bottom-1/3" alt="dis"/>
                 </div>
+            </div>
+            <div>
+            <Lottie animationData={logoBatriders} />
             </div>
             <div className="relative flex">
                 <div className=" flex flex-col justify-center">
-                    <img src={shape} className="absolute inset-x-0 top-20 z-0" />
+                    <img src={shape} className="absolute inset-x-0 top-20 z-0" alt="shape" />
                     <hr className="w-40 rotate-90 mx-auto mt-20 z-10"></hr>
                     <motion.h1 
                     initial={{ y: 100 }}

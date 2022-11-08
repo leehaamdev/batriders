@@ -19,8 +19,8 @@ function Projects() {
     return ( 
         <div className="felx flex-col pb-32">
             <div className="pb-32 relative flex flex-col">
-                <img src={l1} className="absolute top-40" />
-                <img src={l2} className="absolute" />
+                <img src={l1} className="absolute top-40" alt="line"/>
+                <img src={l2} className="absolute" alt="line"/>
                 <motion.h1 
                 initial={{ y: 100 }}
                 whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
@@ -29,13 +29,13 @@ function Projects() {
             </div>
             <div className="relative flex flex-col">
                 <Project img={poolayesh} name='POOLAYESHGAH' title="Advertising systeme" des={des} />
-                <img src={l3} className="absolute inset-y-1/4	" />
+                <img src={l3} className="absolute inset-y-1/4" alt="line"/>
                 <hr className="w-60 rotate-90 mx-auto mt-20 z-10"></hr>
                 <Project img={magreach} name='MAGREACH' title="Advertising systeme" des={des} isRight/>
-                <img src={l4} className="absolute inset-y-2/4	" />
+                <img src={l4} className="absolute inset-y-2/4" alt="line" />
                 <hr className="w-60 rotate-90 mx-auto mt-20 z-10"></hr>
                 <Project img={poolayesh} name='POOLAYESHGAH' title="Advertising systeme" des={des} />
-                <img src={l5} className="absolute inset-y-3/4	" />
+                <img src={l5} className="absolute inset-y-3/4" alt="line" />
                 <hr className="w-60 rotate-90 mx-auto mt-20 z-10"></hr>
                 <Project img={magreach} name='MAGREACH' title="Advertising systeme" des={des} isRight/>
             </div>

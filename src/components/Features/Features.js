@@ -12,7 +12,7 @@ const lorem = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dia
 function Card({img , title , des}) {
     return(
         <div className='flex flex-col justify-center items-center p-6'>
-            <img src={img} className="p-3" />
+            <img src={img} className="p-3" alt='img'/>
             <motion.h1
             initial={{ y: 100 }}
             whileInView={{y:0 , transition:{ duration: .5 ,ease: "easeOut"}}} 
