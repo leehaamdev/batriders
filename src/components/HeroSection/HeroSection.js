@@ -8,6 +8,7 @@ import shape from "../../assets/icons/shape.svg"
 import {motion} from "framer-motion"
 
 function HeroSection() {
+
     return ( 
         <div>
             <div className="flex flex-col justify-center relative">
@@ -22,10 +23,8 @@ function HeroSection() {
                     src={dis} className="absolute inset-x-0 mx-auto bottom-1/3" alt="dis"/>
                 </div>
             </div>
-            <div>
-            </div>
             <div className="relative flex">
-                <div className=" flex flex-col justify-center">
+                <div className="flex flex-col justify-center">
                     <img src={shape} className="absolute inset-x-0 top-20 z-0" alt="shape" />
                     <hr className="w-40 rotate-90 mx-auto mt-20 z-10"></hr>
                     <motion.h1 
